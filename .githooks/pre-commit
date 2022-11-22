@@ -1,0 +1,46 @@
+#!/bin/bash
+
+cd "$(git rev-parse --show-toplevel)"
+ESLINT="node_modules/.bin/eslint"
+PRETTIER="node_modules/.bin/prettier"
+pwd
+
+#Aucune installation de eslint
+if [[ ! -x "$ESLINT" ]]; then
+  printf "Installation de eslint non trouvée\n"
+  exit 1
+fi
+
+#Aucune installation de prettier
+if [[ ! -x "$PRETTIER" ]]; then
+  printf "Installation de prettier non trouvée\n"
+  exit 1
+fi
+
+#récup les fichiers à l'état "staged\"
+STAGED_FILES=($(git diff --cached --name-only --diff-filter=ACM | grep ".js$"))
+
+echo "Fichiers en cours d'analyses.."
+
+#Si aucun fichier nest à l'état staged, renvoyer un code success et arrêt du script
+if [[ "$STAGED_FILES" = "" ]]; then
+  exit 0
+fi
+
+#eslint fix et prettier write
+$ESLINT "${STAGED_FILES[@]}" --fix
+
+CODE_EXIT="$?"
+
+# add les fichiers à nouveau après possible modifications
+git add "${STAGED_FILES[@]}"
+
+if [[ "${CODE_EXIT}" == 0 ]]; then
+  $PRETTIER --write "${STAGED_FILES[@]}"
+  printf "\n\033[42mCOMMIT SUCCEEDED\033[0m\n"
+else
+  printf "\n\033[41mCOMMIT FAILED:\033[0m Fix eslint errors and try again\n"
+  exit 1
+fi
+
+exit $?
