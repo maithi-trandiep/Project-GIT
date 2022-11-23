@@ -5,7 +5,7 @@ ESLINT="node_modules/.bin/eslint"
 PRETTIER="node_modules/.bin/prettier"
 pwd
 
-#Aucune installation de eslint
+#Aucune installation de eslint de trouvée
 if [[ ! -x "$ESLINT" ]]; then
   printf "Installation de eslint non trouvée\n"
   exit 1
