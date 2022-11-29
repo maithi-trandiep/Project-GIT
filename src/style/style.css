@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap");
+body {
+  background-image: url("../assets/light_background_3.jpg");
+  display: block;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+}
+body header #switch-mode-btn {
+  width: 2.5rem;
+  right: 2.5rem;
+  top: 4rem;
+  position: absolute;
+}
+body header #switch-mode-btn img {
+  width: 100%;
+}
+body header #switch-mode-btn img:hover {
+  cursor: pointer;
+}
+body header nav {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+body header nav #left-menu-btns {
+  width: 20%;
+  display: flex;
+  justify-content: start;
+  margin: 0;
+  list-style: none;
+  align-items: center;
+}
+body header nav #left-menu-btns li {
+  display: none;
+  flex-basis: 9%;
+  margin: 0 1.5rem 0 0;
+}
+body header nav #left-menu-btns li img {
+  width: 100%;
+}
+body header nav #left-menu-btns li img:hover {
+  filter: brightness(150%);
+  cursor: pointer;
+}
+body header nav #right-menu-btns {
+  width: 20%;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  list-style: none;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+body header nav #right-menu-btns li {
+  flex-basis: 6%;
+  color: #ffffff;
+}
+body header nav #right-menu-btns li img {
+  width: 100%;
+}
+body main #app_list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 45rem;
+  margin: 0;
+}
+body main #app_list li, body main #app_list #calculator-icon {
+  flex-basis: 18%;
+}
+body main #app_list li img, body main #app_list #calculator-icon img {
+  width: 100%;
+  border-radius: 10px;
+}
+body main #app_list li img:hover, body main #app_list #calculator-icon img:hover {
+  filter: brightness(120%);
+  cursor: pointer;
+}
+body .glass_effect {
+  background: rgba(255, 255, 255, 0.3);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.47);
+}
+body #calculator {
+  display: none;
+  margin: 0;
+  width: 20rem;
+}
+body #calculator .result td {
+  border-radius: 5px;
+}
+body #calculator .result td input {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 1rem 0;
+  font-family: "Roboto Mono", monospace;
+}
+body #calculator .keys input {
+  width: 5rem;
+  background: rgba(255, 255, 255, 0.3);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.47);
+  padding: 1.5rem;
+  border-radius: 5px;
+  font-family: "Roboto Mono", monospace;
+}
+body #calculator .keys input:hover {
+  background-color: rgba(255, 255, 255, 0.63);
+}
+body #calculator .keys #btn-refresh {
+  background-color: rgb(214, 133, 224);
+}
+body #calculator .keys #btn-refresh:hover {
+  background-color: #e4aeea;
+}
+body #calculator .keys #btn-equal {
+  background-color: rgb(123, 155, 216);
+}
+body #calculator .keys #btn-equal:hover {
+  background-color: #a2b9e4;
+}
+body .window {
+  display: none;
+  height: 38rem;
+  width: 50rem;
+  background: rgba(231, 227, 227, 0.9);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+body .window .window-upper-btns {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background: rgba(255, 255, 255, 0.3);
+}
+body .window .window-upper-btns span {
+  margin: 0.5em;
+  color: white;
+}
+body .window .window-upper-btns span:hover {
+  cursor: pointer;
+  color: grey;
+}
+body #params {
+  display: none;
+  width: 45rem;
+  height: 33rem;
+}
+body #params #params-icons {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+body #params #params-icons li {
+  text-align: center;
+  flex-basis: 5.7rem;
+  margin: 2rem;
+}
+body #params #params-icons li img {
+  width: 100%;
+}
+body #params #params-icons li img:hover {
+  cursor: pointer;
+}
+body .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}/*# sourceMappingURL=style.css.map */
