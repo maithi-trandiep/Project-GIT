@@ -1,8 +1,8 @@
 const y =0;
 
 const x =3;
-// const string = x * x;
-// const cubed = x * x * x;
+const string = x * x;
+const cubed = x * x * x;
 
 let resultat = x + y;
 

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css" />
+    <script src="https://kit.fontawesome.com/6ef2e0941a.js" crossorigin="anonymous"></script>
+    <title>SE JAVASCRIPT</title>
+</head>
+
+<body>
+    <header>
+        <nav class="menu glass_effect">
+            <ul id="left-menu-btns">
+                <li id="calculator-icon-small">
+                    <img src="../src/assets/calculator.svg" />
+                </li>
+                <li>
+                    <img src="../src/assets/clock.svg" />
+                </li>
+                <li>
+                    <img src="../src/assets/noughts-and-crosses.svg" />
+                </li>
+                <li id="params-icon-small">
+                    <img src="../src/assets/params.svg" />
+                </li>
+            </ul>
+            <ul id="right-menu-btns">
+                <li><img src="../src/assets/icons/vibration.svg" /></li>
+                <li><img src="../src/assets/icons/signal.svg" /></li>
+                <li><img src="../src/assets/icons/battery.svg" /></li>
+                <li><time datetime="10:00">10:00</time></li>
+                <li>09/10/2022</li>
+            </ul>
+        </nav>
+        <span id="switch-mode-btn"><img src="../src/assets/icons/day-and-night.svg" /></span>
+        <a href="../Sujet.pdf">Sujet</a>
+    </header>
+    <main>
+        <ul id="app_list" class="center">
+            <li id="calculator-icon">
+                <img src="../src/assets/calculator.svg" />
+            </li>
+            <li>
+                <img src="../src/assets/clock.svg" />
+            </li>
+            <li>
+                <img src="../src/assets/noughts-and-crosses.svg" />
+            </li>
+            <li id="params-icon">
+                <img src="../src/assets/params.svg" />
+            </li>
+        </ul>
+
+
+        <section class="window center">
+            <div class="window-upper-btns">
+                <span><i class="fa-solid fa-minus"></i></span>
+                <span><i class="fa-regular fa-square"></i></span>
+                <span><i class="fa-solid fa-xmark"></i></span>
+            </div>
+        </section>
+        <table id="calculator" class="center">
+            <tr class="result">
+                <td colspan="4" class="glass_effect"> <input id="result-input" type="text" value="0" /></td>
+            </tr>
+            <tr class="keys">
+                <td> <input type="button" value="C" id="btn-refresh" /> </td>
+                <td> <input type="button" value="M+" id="btn-mr" /> </td>
+                <td> <input type="button" value="MC" id="btn-mc"> </td>
+                <td> <input type="button" value="+/-" /> </td>
+            </tr>
+            <tr class="keys">
+                <td> <input type="button" value="1" /> </td>
+                <td> <input type="button" value="2" /> </td>
+                <td> <input type="button" value="3" /> </td>
+                <td> <input type="button" value="+" id="btn-add" /> </td>
+            </tr>
+            <tr class="keys">
+                <td> <input type="button" value="4" /> </td>
+                <td> <input type="button" value="5" /> </td>
+                <td> <input type="button" value="6" /> </td>
+                <td> <input type="button" value="-" id="btn-substract" /> </td>
+            </tr>
+            <tr class="keys">
+                <td> <input type="button" value="7" /> </td>
+                <td> <input type="button" value="8" /> </td>
+                <td> <input type="button" value="9" /> </td>
+                <td> <input type="button" value="*" id="btn-multiply" /> </td>
+            </tr>
+            <tr class="keys">
+                <td> <input type="button" value="." id="btn-comma" /> </td>
+                <td> <input type="button" value="0" /> </td>
+                <td> <input type="button" value="=" id="btn-equal" /> </td>
+                <td> <input type="button" value="/" id="btn-division" /> </td>
+            </tr>
+        </table>
+        <div id="params" class="center">
+            <h2>Paramètres</h2>
+            <ul id="params-icons">
+                <li>
+                    <img src="../src/assets/params_icons/clock.png" />
+                    <span>Paramètres d'horloge</span>
+                </li>
+                <li>
+                    <img src="../src/assets/params_icons/calendar.png" />
+                    <span>Date</span>
+                </li>
+                <li>
+                    <img src="../src/assets/params_icons/vibrate.png" />
+                    <span>Vibration</span>
+                </li>
+                <li>
+                    <img src="../src/assets/params_icons/battery.png" />
+                    <span>Batterie</span>
+                </li>
+                <li>
+                    <img src="../src/assets/params_icons/network.png" />
+                    <span>Réseau</span>
+                </li>
+                <li>
+                    <img src="../src/assets/params_icons/lock.png" />
+                    <span>Écran de verouillage</span>
+                </li>
+                <li>
+                    <img src="../src/assets/params_icons/theme.png" />
+                    <span>Thèmes</span>
+                </li>
+                <li>
+                    <img src="../src/assets/params_icons/params.png" />
+                    <span>Paramètres supplimentaires</span>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
