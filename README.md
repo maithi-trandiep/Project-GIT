@@ -126,9 +126,9 @@ Ce projet est soumit à son [code de conduite](CODE_OF_CONDUCT.md), le respect d
 
 ## Remerciements
 
-* []()
-* []()
-* []()
+* [Alicia](https://github.com/Aliciasaci)
+* [Mai-Thi](https://github.com/maithi-trandiep/)
+* [Awa](https://github.com/londones/)
 
 <p align="right">(<a href="#readme-top">retour en haut de page</a>)</p>
 
