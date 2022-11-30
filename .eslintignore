@@ -1,1 +1,8 @@
+#Ne pas passer l'ensemble des fichiers suivant dans un eslint, si main non précisé 
 node_modules
+.githooks
+readme
+.gitingore
+.prettierignore
+*.md
+package-lock.json
